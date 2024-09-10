@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Test Gilvera</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script defer async src="./index.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="main__sidebar sidebar">
+      <div>
+        <div class="sidebar__mob">
+          <div class="sidebar__menu">
+            <button class="openBtn"><img src="./images/menu.svg" alt="menu"></button>
+      
+            <button class="sidebar__menu_close closeBtn"><img src="./images/close.svg" alt="menu close"></button>
+          </div>
+
+          <a href="#" class="sidebar__link">
+            <img src="./images/logo.png" alt="logo">
+            <span>v.01</span>
+          </a>
+        </div>
+
+        <ul class="sidebar__list">
+          <li>
+            <div>
+              <img src="./images/key-square.png" />
+              <a href="#">Dashboard</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/3d-square.png" />
+              <a href="#">Product</a>
+            </div>
+            <img src="./images/arrow.png" />
+          </li>
+          <li class="active">
+            <div>
+              <img src="./images/user-square.png" />
+              <a href="#">Customers</a>
+            </div>
+            <img src="./images/arrowHover.png" />
+          </li>
+          <li>
+            <div>
+              <img src="./images/wallet.png" />
+              <a href="#">Income</a>
+            </div>
+            <img src="./images/arrow.png" />
+          </li>
+          <li>
+            <div>
+              <img src="./images/discount.png" />
+              <a href="#">Promote</a>
+            </div>
+            <img src="./images/arrow.png" />
+          </li>
+          <li>
+            <div>
+              <img src="./images/message.png" />
+              <a href="#">Help</a>
+            </div>
+            <img src="./images/arrow.png" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar__user">
+        <img src="./images/user.png" alt="user">
+
+        <div>
+          <p class="sidebar__user_name">Evano</p>
+
+          <p class="sidebar__user_role">Project Manager</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__page customers">
+      <h1 class="customers__heading">Hello Evano 👋🏼,</h1>
+
+      <div class="customers__container">
+        <div class="customers__header">
+          <div>
+            <p class="customers__title">All Customers</p>
+  
+            <p class="customers__text">Active Members</p>
+          </div>
+
+          <div class="customers__input">
+            <img src="./images/search.png" alt="search">
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="customers__tableScroll">
+          <table class="customers__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td class="customers__table_status">
+                  <span class="active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td class="customers__table_status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td class="customers__table_status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td class="customers__table_status">
+                  <span class="active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td class="customers__table_status">
+                  <span class="active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td class="customers__table_status">
+                  <span class="active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td class="customers__table_status">
+                  <span class="active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td class="customers__table_status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="customers__footer">
+          <p>Showing data 1 to 8 of 256K entries</p>
+    
+          <div class="customers__pagination">
+            <button>
+              <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.936 6.392L0.176 3.668L2.936 0.944H4.664L1.892 3.668L4.664 6.392H2.936Z" fill="#404B52"/>
+              </svg>
+            </button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <span>...</span>
+            <button>40</button>
+            <button>
+              <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.344 0.944H2.072L4.832 3.668L2.072 6.392H0.344L3.116 3.668L0.344 0.944Z" fill="#404B52"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
