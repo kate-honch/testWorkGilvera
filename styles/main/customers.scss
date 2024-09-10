@@ -1,0 +1,145 @@
+.customers {
+  &__heading {
+    padding: 41px 71px 47px 71px;
+    font-size: 24px;
+  }
+
+  &__container {
+    margin: 0 79px 0 87px;
+    background-color: #FFF;
+    border-radius: 30px;
+    @media screen and (max-width: 1024px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 38px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #16C098;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 8px;
+    background-color: #F9FBFF;
+    border-radius: 10px;
+
+    input {
+      border: none;
+      background: #F9FBFF;
+    }
+
+    input::placeholder {
+      color: #B5B7C0;
+      font-size: 12px;
+    }
+  }
+  
+  &__tableScroll {
+    overflow: auto;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 40px;
+    overflow: scroll;
+
+    thead {
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    th {
+      text-align: center;
+      color: #B5B7C0;
+      font-size: 14px;
+      line-height: 21px;
+      padding-bottom: 14px;
+    }
+
+    tbody {
+      td {
+        font-size: 14px;
+        line-height: 29px;
+        padding: 20px 38px;
+        text-align: center;
+        white-space: nowrap;
+        color: #292D32;
+      }
+    }
+
+    &_status span {
+      padding: 4px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    .active {
+      color: #008767;
+      border: 1px solid #00B087;
+      background-color: rgba(22, 192, 152, 0.38);
+    }
+
+    .inactive {
+      color: #DF0404;
+      border: 1px solid #DF0404;
+      background-color: #FFC5C5;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 30px 40px 40px 38px;
+
+    > p {
+      color: #B5B7C0;
+      font-size: 14px;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    button {
+      min-width: 25px;
+      height: 24px;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F5F5F5;
+      border-radius: 4px;
+      border: 1px solid #EEEEEE;
+      color: #404B52;
+      font-size: 12px;
+
+      &.active {
+        background-color: #5932EA;
+        color: #fff;
+      }
+    }
+  }
+}
