@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main__page {
+  width: calc(100% - 306px);
+  background-color: #FAFBFF;
+}
+@media screen and (max-width: 1024px) {
+  .main__page {
+    width: 100%;
+  }
+}
+
+.sidebar {
+  width: 306px;
+  padding: 36px 28px 76px 28px;
+  background-color: #FFF;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: auto;
+    padding: 15px;
+    background: #FAFBFF;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}/*# sourceMappingURL=main.css.map */
